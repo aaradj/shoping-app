@@ -1,0 +1,126 @@
+.contianer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+    text-align: center;
+    width: 62%;
+    height: 45vh;
+     position: relative;
+     border: 1px solid #bbb;
+     border-radius: 10px;
+     padding: .3rem .5rem;
+    transition: all ease .5s;
+    background-color: rgba(255, 255, 255, .9);
+    box-shadow: none;
+}
+.contianer:hover{
+    box-shadow: 0px 6px 6px 0 rgba(0, 7, 39, 0.3);
+    transition: all ease .15s;
+}
+.contianer img{
+    width: 120px;
+    height: 160px;
+    object-fit: contain;
+}
+.contianer h2{
+    color: #1b1b1b;
+    font-size: 1.2rem;
+}
+.contianer p{
+    font-size: 1rem;
+    font-weight:700;
+    color: #ed3746;
+    margin-bottom: 2rem;
+}
+.contianer div{
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contianer a{
+    color: #ed3746;
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+    width: 55%;
+}
+.contianer .button{
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    text-align: center;
+}
+.button{
+    transition: all ease .2s;
+}
+.button button{
+    outline: none;
+    color: white;
+    background: #dd305d;
+    border: none;
+    padding: 4px 7px;
+    border-radius: 10px;
+    font-size: .86rem;
+    font-weight: 700;
+    margin: .2rem;
+}
+.contianer button:active{
+    background-color: #dd305d;
+}
+
+.svgicon {
+  width: 1em;
+  height: 1em;
+}
+
+.svgicon path,
+.svgicon polygon,
+.svgicon rect {
+  fill: white;
+}
+
+.svgicon circle {
+  stroke: white;
+  stroke-width: 1;
+}
+@media (min-width: 1280px) {
+    .contianer{
+        width: 14%;
+        height: 40vh;
+        margin: 2.7rem;
+        transition: all ease-in .15s;
+        justify-content: space-between;
+    }
+    .contianer img{
+        width: 150px;
+        height: 210px;
+        object-fit: contain;
+    }
+    .contianer h2{
+        font-size: 1.2rem;
+    }
+    .contianer p{
+        font-size: 1.1rem;
+    }
+    .contianer a{
+        font-size: 1.2rem;
+    }
+    .contianer button{
+        cursor: pointer;
+        padding: 4px 7px;
+        font-size: .9rem;
+    }
+    .svgicon {
+        width: 1.4em;
+        height: 1.2em;
+      }
+      
+}

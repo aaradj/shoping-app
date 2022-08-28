@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+body{
+    /* background-color: #ecf0f3; */
+    background-color: #f4fcf9;
+}
+div{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,290 @@
+header {
+  position: fixed;
+  width: 100%;
+  height: fit-content;
+  background-color: rgba(255, 255, 255);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  padding: 0.09rem 0;
+  margin-bottom: .5rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.3rem 0.5rem;
+  margin-bottom: 1rem;
+  transition: all linear .3s;
+
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem 0 0;
+}
+.title {
+  color: #ed3746;
+  font-size: 1rem;
+  border-bottom: 2px solid #dd305d;
+  padding: 0.1rem;
+}
+
+ul {
+  display: none;
+  flex-direction: column;
+  width: 30%;
+  margin-top: 0;
+  height: fit-content;
+  padding-bottom: 1rem;
+  margin: 1rem;
+  transition: all linear 3s;
+}
+ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  justify-content: space-around;
+}
+ul h3 {
+  margin-bottom: 1rem;
+  color: #1b1b1b;
+  /* color: #1b1b1b; */
+  font-size: 1.1rem;
+  padding: 0.4rem 0;
+  font-weight: 700;
+}
+a {
+  color: #1b1b1b;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  transition: all linear 0.3s;
+}
+.svgicon {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.svgicon path,
+.svgicon polygon,
+.svgicon rect {
+  fill: #1b1b1b;
+}
+
+.svgicon circle {
+  stroke: #ecf0f3;
+  stroke-width: 1;
+}
+.svgiconn {
+  width: 1.2em;
+  height: 1.5em;
+  fill: #1b1b1b;
+  stroke: #1b1b1b;
+  stroke-width: 2;
+  display: none;
+}
+ul .svgicon path,
+ul .svgicon polygon,
+ul .svgicon rect {
+  fill: #1b1b1b;
+  transition: all ease-in 0.5s;
+}
+
+ul .svgicon circle {
+  stroke: #1b1b1b;
+  stroke-width: 1;
+  transition: all ease-in 0.5s;
+}
+ul .svgiconn {
+  width: 1.5em;
+  height: 1.5em;
+  fill: #ecf0f3;
+  stroke: #ecf0f3;
+  stroke-width: 2;
+  display: none;
+}
+ul li:hover a .svgicon {
+  stroke: #1b1b1b;
+  fill: #1b1b1b;
+  transition: all ease-in 0.5s;
+}
+.row1 svg {
+  margin-left: 0.5rem;
+}
+.row2 {
+  margin: 0;
+  padding: 0;
+}
+.row2 span {
+  color: #1b1b1b !important;
+}
+.shop span{
+  color: #ed3746 !important;
+}
+.row2 svg {
+  margin-left: 1.5rem;
+}
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: #ecf0f3;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.SignUp svg {
+  margin-left: 0.2rem;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.searchBox {
+  width: 100%;
+  position: relative;
+  top: 4rem;
+  z-index: 1;
+}
+.searchBox input {
+  width: 85%;
+  outline: none;
+  padding: 10px;
+  padding-top: 16px;
+  font-size: 1.1rem;
+  border: none;
+  margin: 0;
+  border-bottom: 1px solid #ed3746;
+  border-top: 1px solid #ed3746;
+}
+.searchBox button {
+  width: 15%;
+  padding: 12px 0;
+  border: none;
+  border-top: 1px solid #ed3746;
+  border-bottom: 1px solid #ed3746;
+  background-color: #fff;
+}
+.searchBox button:active {
+  background-color: #ed3746;
+  color: white;
+}
+.searchBox button:active svg {
+  stroke: white;
+  fill: white;
+}
+.imgheader{
+  width: 100;
+  height: fit-content;
+  z-index: 0;
+}
+.imgheader img{
+  width: 100%;
+  height: min-content;
+  object-fit: contain;
+  transition: all linear .3s;
+  transform: scale(100%);
+}
+.imgheader img:hover{
+  transition: all linear .3s;
+  transform: scale(103%);
+}
+@media (min-width: 1280px) {
+  .row2 {
+    display: flex;
+    align-items: center;
+    width: 100;
+    position: absolute;
+    right: 3rem;
+    top: 1.2rem;
+    font-size: 1.1rem;
+  }
+  .row2 svg {
+    margin: 0 0.5rem;
+  }
+  .row2 .SignUp {
+    margin: 0 1.5rem;
+  }
+  .SignUp a {
+    font-size: 1.3rem;
+  }
+  .shop .svgicon {
+    width: 2.6em;
+    height: 2.6em;
+  }
+  .shop span {
+    font-size: 1.3rem;
+  }
+  .row1 div {
+    display: none;
+  }
+  ul {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 9rem;
+    top: 1.2rem;
+    width: 60%;
+  }
+  ul li a {
+    display: flex;
+    align-items: center;
+    color: #1b1b1b;
+    margin: 0 2rem;
+    font-size: 1.2rem;
+  }
+  ul li a .svgicon {
+    margin: 0 0.5rem;
+    width: 1.8em;
+    height: 1.8em;
+  }
+  ul h3 {
+    display: none;
+  }
+  .title {
+    margin: 0 1rem;
+    font-size: 1.4rem;
+  }
+  .container {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .searchBox {
+    width: 50%;
+    border-left: 1px solid #ed3746;
+    height: 5rem;
+    background-color: black;
+    position: relative;
+    /* right: 30rem; */
+  }
+  .searchBox input {
+    height: 100%;
+    padding: 17px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1b1b1b;
+  }
+  .searchBox button {
+    padding: 29px 0;
+    text-align: center;
+    cursor: pointer;
+  }
+  .imgheader{
+    position: relative;
+    bottom: 3rem;
+  }
+  .imgheader img{
+    height: 60vh;
+    object-fit: cover;
+  }
+}

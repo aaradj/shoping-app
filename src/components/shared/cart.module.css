@@ -1,0 +1,76 @@
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin-top: 1rem;
+    padding: 0 1rem;
+    width: 100%;
+    border-bottom: 1px solid silver;
+    margin: 0;
+}
+.box img{
+    width: 40px;
+    height: 60px;
+    object-fit: contain;
+}
+.box h2{
+    font-size: .9rem;
+    color: #141E30;
+}
+.box p{
+    color: #141E30;
+    font-size: .8rem;
+    font-weight: 700;
+}
+.box span{
+    color: #141E30 !important;
+    font-size: .8rem;
+}
+.box button{
+    border: none;
+    background-color: #ed3746;
+    padding: 3px 4px;
+    width: fit-content;
+    margin: .3rem;
+    border-radius: 4px;
+}
+.svgicon {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.svgicon path,
+.svgicon polygon,
+.svgicon rect {
+  fill: white;
+}
+
+@media (min-width: 1280px) {
+    .box{
+        border-radius: 5px;
+        box-shadow: 0 4px 4px 2px rgba(0, 0, 0, .4);
+        margin: 1rem;
+        border: none;
+    }
+    .box img{
+        width: 70px;
+        height: 100px;
+    }
+    .box h2{
+        font-size: 1.2rem;
+    }
+    .box p{
+        font-size: 1rem;
+    }
+    .box span{
+        font-size: 1rem;
+    }
+    .box button{
+        padding: 4px 6px;
+    }
+    .svgicon{
+        width: 1.5em;
+        height: 1.5em;
+    }
+}

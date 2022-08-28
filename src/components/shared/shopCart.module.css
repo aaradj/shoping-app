@@ -1,0 +1,111 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    background: white;
+    overflow: scroll;
+}
+.selectedItems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: max-content;
+}
+.all{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: space-around;
+    height: fit-content;
+    width: 100%;
+    margin-top: 2rem;
+    border-top: 1px solid  #ed3746;
+    border-bottom: 1px solid  #ed3746;
+    /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3); */
+    padding-top: .2rem;
+    background-color: rgba(192, 192, 192, .1);
+}
+.rows{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.rows h3{
+    font-size: 1rem;
+    margin:.5rem;
+    color: #1b1b1b;
+}
+.rows p{
+    color:  #ed3746;
+}
+.checkout{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    position: relative;
+    padding-bottom: .5rem;
+    margin-top: 1rem;
+}
+.checkout h3{
+    font-size: 1rem;
+    margin: .5rem;
+    color: #1b1b1b;
+}
+.checkout a{
+    margin:auto 0;
+}
+.checked,.clear{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+.checked p,
+.clear p{
+    color:  #1b1b1b;
+    margin: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.checked a,
+.clear a{
+    font-size: 1.1rem;
+    border-bottom: 2px solid  #ed3746;
+    padding-bottom: 5px;
+}
+.clear p{
+    color: #1b1b1b;
+}
+@media (min-width: 1280px) {
+    .container{
+        display: flex;
+        justify-content: space-between;
+        border: none !important;
+}
+    .selectedItems{
+        width: 60%;
+    }
+    .all{
+        width: 39%;
+        height: 20vh;
+        margin: 1rem;
+        border: none;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .4);
+        border-radius: 7px;
+    }
+    .checkout,
+    .clear{
+        border: none;
+        cursor: pointer;
+    }
+    .checked,
+    .clear{
+        height: 100vh;
+        position: absolute;
+    }
+}
